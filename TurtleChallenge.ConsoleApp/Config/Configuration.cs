@@ -13,13 +13,14 @@ namespace TurtleChallenge.ConsoleApp.Config
         [JsonProperty("Turtle")]
         public ObjectBoard Turtle { get; set; }
 
-        [JsonProperty("Mines")]
-        public List<ObjectBoard> Mines { get; set; }
-
         [JsonProperty("Exit")]
         public ObjectBoard Exit { get; set; }
 
+        [JsonProperty("Mines")]
+        public List<ObjectBoard> Mines { get; set; }
+
         [JsonProperty("Instructions")]
         public List<String> Instructions { get; set; }
+
     }
 }
