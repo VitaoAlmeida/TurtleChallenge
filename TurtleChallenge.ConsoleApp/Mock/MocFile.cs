@@ -8,8 +8,8 @@ namespace TurtleChallenge.ConsoleApp.Mock
         public static Configuration Config()
         {
             ObjectBoard board = new ObjectBoard();
-            board.X = 4;
-            board.Y = 5;
+            board.X = 5;
+            board.Y = 4;
 
             ObjectBoard turtle = new ObjectBoard();
             turtle.X = 0;
@@ -28,8 +28,8 @@ namespace TurtleChallenge.ConsoleApp.Mock
             });
             mines.Add(new ObjectBoard()
             {
-                X = 1,
-                Y = 3
+                X = 3,
+                Y = 1
             });
             mines.Add(new ObjectBoard()
             {
@@ -47,7 +47,7 @@ namespace TurtleChallenge.ConsoleApp.Mock
         }
 
 
-        public static List<string> Instructions_Go_to_exit()
+        public static List<string> Instructions_Go_To_Exit()
         {
             List<string> instructions = new List<string>();
 
@@ -55,6 +55,62 @@ namespace TurtleChallenge.ConsoleApp.Mock
             instructions.Add("r");
             instructions.Add("m");
             instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+
+            return instructions;
+        }
+
+
+        public static List<string> Instructions_Out_Of_Bound()
+        {
+            List<string> instructions = new List<string>();
+
+            instructions.Add("r");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("m");
+
+            return instructions;
+        }
+
+
+        public static List<string> Instructions_Hit_Mine()
+        {
+            List<string> instructions = new List<string>();
+
+            instructions.Add("r");
+            instructions.Add("m");
+
+            return instructions;
+        }
+
+        public static List<string> Instructions_Still_In_Danger()
+        {
+            List<string> instructions = new List<string>();
+
+            instructions.Add("m");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("r");
+            instructions.Add("m");
+            instructions.Add("m");
+            instructions.Add("r");
             instructions.Add("m");
             instructions.Add("m");
             instructions.Add("r");

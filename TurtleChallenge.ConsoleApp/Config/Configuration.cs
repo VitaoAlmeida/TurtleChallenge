@@ -19,8 +19,5 @@ namespace TurtleChallenge.ConsoleApp.Config
         [JsonProperty("Mines")]
         public List<ObjectBoard> Mines { get; set; }
 
-        [JsonProperty("Instructions")]
-        public List<String> Instructions { get; set; }
-
     }
 }
