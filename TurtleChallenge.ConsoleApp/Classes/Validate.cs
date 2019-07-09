@@ -6,6 +6,6 @@ namespace TurtleChallenge.ConsoleApp.Classes
 {
     public class Validate
     {
-        // TODO validate if the position of the turtle
+        // TODO validate the position of the turtle (exit, mines, board)
     }
 }
