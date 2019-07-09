@@ -22,42 +22,5 @@ namespace TurtleChallenge.ConsoleApp.Classes
             Exit = exit;
         }
 
-
-
-
-       private void Print()
-        {
-            int x = _xLength;
-            int y = _yLength;
-
-            for (int i = 0; i < x; i++)
-            {
-                //Line
-                Console.Write(" ");
-                for (int k = 0; k < y; k++)
-                {
-                    Console.Write("---- ");
-                }
-                Console.WriteLine("");
-
-                //Column
-                Console.Write("|  ");
-                for (int j = 0; j < y; j++)
-                {
-                    Console.Write("  |  ");
-                }
-                Console.WriteLine("");
-            }
-
-            //Last line
-            Console.Write(" ");
-            for (int k = 0; k < y; k++)
-            {
-                Console.Write("---- ");
-            }
-            Console.WriteLine("");
-
-        }
-
     }
 }
